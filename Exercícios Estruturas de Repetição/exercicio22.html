@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 22</title>
+</head>
+<body>
+    <h2>22 - Faça um programa que leia um número inteiro e exiba se ele é um número primo usando o loop "do-while".</h2>
+
+    <script>
+        let n = parseInt(prompt("Digite um número inteiro:"));
+        let divisor = 2;
+        let primo = true;
+
+        do {
+            if (n % divisor == 0) {
+                primo = false;
+                break;
+            }
+            divisor++;
+        } while (divisor <= n / 2);
+
+        if (primo && n > 1) {
+            document.write(n + " é um número primo.")
+        } else {
+            document.write(n + " não é um número primo.")
+        }
+
+    </script>
+
+</body>
+</html>

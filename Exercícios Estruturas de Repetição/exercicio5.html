@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+</head>
+<body>
+    <h2>5 - Escreva um programa que leia um número inteiro e exiba a tabuada desse número até o décimo valor usando o loop "while".</h2>
+
+    <script>
+        
+        let n = parseInt(prompt("Digite um número para a tabuada:"))
+        let tabuada = 0;
+        let resultado = 0;
+
+        while (tabuada <= 10) {
+            resultado = n * tabuada;
+            document.write(n + " x " + tabuada + " = " + resultado + "<br />")
+            tabuada++;
+        }
+        
+    </script>
+</body>
+</html>
